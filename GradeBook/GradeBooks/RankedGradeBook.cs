@@ -21,22 +21,23 @@ namespace GradeBook.GradeBooks
             }
             else
             {
-                var dropLetterGrade = (int)Math.Ceiling(Students.Count * 0.2);
-                var grades = Students.OrderByDescending(e => e.AverageGrade).Select(e => e.AverageGrade).ToList();
-                if (grades[dropLetterGrade - 1] <= averageGrade)
+                var dropGrade = (int)Math.Round(Students.Count * 0.2);
+                var aveGrade = Students.OrderByDescending(e => e.AverageGrade).Select(e => e.AverageGrade).ToList();
+
+                if (aveGrade[dropGrade - 1] <= averageGrade)
                 {
                     return 'A';
                 }
-                else if (grades[2 * dropLetterGrade - 1] <= averageGrade)
+                else if (aveGrade[2 * dropGrade - 1] <= averageGrade)
                 {
                     return 'B';
                 }
-                else if (grades[3 * dropLetterGrade - 1] <= averageGrade)
+                else if (aveGrade[3 * dropGrade - 1] <= averageGrade)
                 {
                     return 'C';
 
                 }
-                else if (grades[4 * dropLetterGrade - 1] <= averageGrade)
+                else if (aveGrade[4 * dropGrade - 1] <= averageGrade)
                 {
                     return 'D';
                 }
