@@ -9,16 +9,17 @@ using Newtonsoft.Json.Linq;
 
 namespace GradeBook.GradeBooks
 {
-     public abstract class BaseGradeBook
+    public abstract class BaseGradeBook
     {
         public string Name { get; set; }
         public List<Student> Students { get; set; }
         public GradeBookType Type { get; set; }
+        public bool IsWeighted  { get; set; }
 
-
-        public BaseGradeBook(string name)
+        public BaseGradeBook(string name, bool isWeighted)
         {
             Name = name;
+            IsWeighted = isWeighted;
             Students = new List<Student>();
         }
 
@@ -106,20 +107,38 @@ namespace GradeBook.GradeBooks
             }
         }
 
-        public virtual double GetGPA(char letterGrade, StudentType studentType)
+        public virtual double GetGPA(char letterGrade, StudentType studentType, bool isWeighted)
         {
-            switch (letterGrade)
+            if (isWeighted == false || studentType == StudentType.Standard)
             {
-                case 'A':
-                    return 4;
-                case 'B':
-                    return 3;
-                case 'C':
-                    return 2;
-                case 'D':
-                    return 1;
+                switch (letterGrade)
+                {
+                    case 'A':
+                        return 4;
+                    case 'B':
+                        return 3;
+                    case 'C':
+                        return 2;
+                    case 'D':
+                        return 1;
+                }
+                return 0;
             }
-            return 0;
+            else
+            {
+                switch (letterGrade)
+                {
+                    case 'A':
+                        return 5;
+                    case 'B':
+                        return 4;
+                    case 'C':
+                        return 3;
+                    case 'D':
+                        return 2;
+                }
+                return 1;
+            }
         }
 
         public virtual void CalculateStatistics()
@@ -265,6 +284,8 @@ namespace GradeBook.GradeBooks
                              select type).FirstOrDefault();
             
             return JsonConvert.DeserializeObject(json, gradebook);
+
+
         }
     }
 }
