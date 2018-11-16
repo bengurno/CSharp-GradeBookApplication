@@ -3577,11 +3577,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj",
+      "projectUniqueName": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj",
       "projectName": "GradeBook",
-      "projectPath": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj",
+      "projectPath": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj",
       "packagesPath": "C:\\Users\\FDM-User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBook\\obj\\",
+      "outputPath": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBook\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

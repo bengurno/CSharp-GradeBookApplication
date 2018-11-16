@@ -5743,11 +5743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBookTests\\GradeBookTests.csproj",
+      "projectUniqueName": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBookTests\\GradeBookTests.csproj",
       "projectName": "GradeBookTests",
-      "projectPath": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBookTests\\GradeBookTests.csproj",
+      "projectPath": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBookTests\\GradeBookTests.csproj",
       "packagesPath": "C:\\Users\\FDM-User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBookTests\\obj\\",
+      "outputPath": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBookTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5766,8 +5766,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj": {
-              "projectPath": "C:\\Users\\FDM-User\\Desktop\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj"
+            "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj": {
+              "projectPath": "C:\\Users\\FDM-User\\Documents\\GitHub\\CSharp-GradeBookApplication\\GradeBook\\GradeBook.csproj"
             }
           }
         }
